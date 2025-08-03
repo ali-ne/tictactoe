@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="ttt.css" />
+    <script src="ttt.js" defer></script>
+  </head>
+  <body id="body">
+    <h1>ttt</h1>
+    <div id="gameBoard">
+      <div id="leftSide">
+        <form id="players">
+          <h3 id="defP">Defina os jogadores</h3>
+          <label for="nameP1">Player X</label>
+          <input class="choose" type="text" id="nameP1" maxlength="9" />
+          <label for="nameP2">Player O</label>
+          <input class="choose" type="text" id="nameP2" maxlength="9" />
+          <button class="choose" id="start">START</button>
+        </form>
+        <div id="controls">
+          <button id="newRound">NOVA PARTIDA</button>
+
+          <button id="endGame">TERMINAR JOGO</button>
+        </div>
+      </div>
+
+      <div id="set" class="inactive">
+        <img src="gray.png" class="tab" id="1" />
+        <img src="gray.png" class="tab" id="2" />
+        <img src="gray.png" class="tab" id="3" />
+        <img src="gray.png" class="tab" id="4" />
+        <img src="gray.png" class="tab" id="5" />
+        <img src="gray.png" class="tab" id="6" />
+        <img src="gray.png" class="tab" id="7" />
+        <img src="gray.png" class="tab" id="8" />
+        <img src="gray.png" class="tab" id="9" />
+      </div>
+
+      <div id="rightSide">
+        <div class="track" id="score1"></div>
+        <div class="track" id="score2"></div>
+      </div>
+    </div>
+  </body>
+</html>
